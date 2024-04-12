@@ -15,19 +15,19 @@
 
 <body>
   <div class="header">
-    <h1> Supermercado</h1>
+    <h1><i class="fas fa-store"></i>Supermercado</h1>
     <div class="burguer">
-      <a href="javascript:void(0)" onclick="toggleVisibility()"><i class="fas fa-bars"></i></a>
-    </div>
+        <a href="javascript:void(0)" onclick="toggleVisibility()"><i class="fas fa-bars"></i></a>
+    </div> 
     <nav class="navbar" id="navbar">
-      <ul class="li-buttons">
-        <li id="li1"><a href="index.html">Inicio</a></li>
-        <li class="li2"><a href="login.html">Login</a></li>
-        <li><a href="supermercado.html">Supermercado</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <ul class="li-buttons">
+            <li id="li1"><a href="index.html">Inicio</a></li>
+            <li class="li2"><a href="login.html">Login</a></li>
+            <li><a href="supermercado.html">Supermercado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
-  </div>
+</div>
 <br>
 <div class="container">
   <h2>Editar Producto</h2>
@@ -48,7 +48,7 @@
       <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01" required>
       <div class="error" id="productPriceError"></div>
     </div>
-    <button type="submit" class="btn btn-primary"><a href="admin-registro.html">Actualizar Producto</a></button>
+    <form action="admin-registro.html"><button type="submit" class="btn btn-primary">Actualizar Producto</button></form>    
   </form>
 
   <hr>
