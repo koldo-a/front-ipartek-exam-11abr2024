@@ -1,31 +1,32 @@
-.error {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-  display: none;
+.col-sm-12 {
+  text-align: center;
+  font-size: 18px;
 }
 
-input:invalid + .error,
-textarea:invalid + .error {
-  display: block;
+.btn {
+width: 100%;
+margin: 3px;
 }
 
+.pagination {
+  background-color: transparent;
+}
+
+.container {
+  margin-bottom: 5%;
+}
+
+table {
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
-    tr {
-        display: grid;
-    }
+  .col-sm-12 {
+    text-align: center;
+    font-size: 14px;
+  }
 
-    #titulo {
-        display: none;
-    }
-
-    .input-group .btn-number {
-        width: 1.5rem;
-      }
-      
-      .input-number {
-        text-align: center;
-      }
-      
+  form {
+    font-size: 14px;
+  };
 }
