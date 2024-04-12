@@ -1,0 +1,82 @@
+.card {
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.row {
+  margin-top: 10px;
+    justify-content: center;
+  }
+
+.container {
+    margin-top: 20px;
+  }
+
+.btn-primary {
+    width: 100%;
+    background-color: rgb(23, 165, 23);
+  }
+
+.input-number {
+  text-align: center;
+  }
+
+input {
+    border-radius: 20px !important;
+  }
+
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .card-body>.input-group {
+    width: 50% !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+
+    
+  }
+
+  .discount-price {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: #FF5733;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .discount-price2 {
+    position: absolute;
+    top: 215px;
+    left: 105px;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+.price {
+    color: gray;
+    text-decoration: line-through;
+  }
+
+@media screen and (min-width: 576px) {
+  .card-body>.input-group {
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+
+    
+  }
+}

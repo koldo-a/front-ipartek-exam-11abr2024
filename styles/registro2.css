@@ -1,0 +1,134 @@
+.navbar {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+    position: sticky;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.navbar.show-navbar {
+    display: block;
+}
+
+.burguer {
+    display: none;
+}
+
+#navbar {
+    text-decoration: none;
+}
+.stick {
+    position: sticky;
+    top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.li-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    list-style: none;
+    color: rgb(209, 209, 209);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    
+    
+
+    li {
+        transition: all 0.5s ease-in-out;
+        a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+    }
+
+    li>a:hover {
+        cursor: pointer;
+        color: rgb(65, 206, 105);
+        letter-spacing: 0.5px;
+        transition: all .3s ease-in-out;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .navbar {
+        display: block; 
+    }
+
+    ul {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul {
+        background-color: black;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    li {
+        padding-top: 20px;
+    }
+
+    .li-buttons {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 10em;
+        border-radius: 10px;
+        z-index: 2;
+    }
+  
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+    }
+    .burguer {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        margin-right: 20px;
+        
+        & i {
+            font-size: 1.5em;
+            border-radius: 10px;
+            border: 0.3px solid black;
+            padding: 10px;
+        }
+
+        & i:hover{
+            cursor: pointer;
+            background-color: rgb(189, 189, 189);
+        }
+
+        & i:active {
+            background-color: rgb(255, 134, 134);
+        }
+    }  

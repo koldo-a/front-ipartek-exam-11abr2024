@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/supermercado.css">
+  <script src="https://kit.fontawesome.com/4df4d45ba0.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1> Supermercado</h1>
+    <div class="burguer">
+      <a href="javascript:void(0)" onclick="toggleVisibility()"><i class="fas fa-bars"></i></a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul class="li-buttons">
+        <li id="li1"><a href="index.html">Inicio</a></li>
+        <li class="li2"><a href="login.html">Login</a></li>
+        <li><a href="supermercado.html">Supermercado</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=1" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=2" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="price">€10.99</p>
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet sagittis feugiat.</p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus">+</span>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-primary">Añadir al carrito</button>
+            <div class="discount-price">-€2.00</div>
+            <div class="discount-price2">€8.99</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy;2024 Koldo Arretxea</p>
+    <ul id="redes-sociales">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

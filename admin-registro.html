@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/registro.css">
+  <script src="https://kit.fontawesome.com/4df4d45ba0.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1> Supermercado</h1>
+    <div class="burguer">
+      <a href="javascript:void(0)" onclick="toggleVisibility()"><i class="fas fa-bars"></i></a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul class="li-buttons">
+        <li id="li1"><a href="index.html">Inicio</a></li>
+        <li class="li2"><a href="login.html">Login</a></li>
+        <li><a href="supermercado.html">Supermercado</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Gestión Productos</h2>
+    
+
+    <table class="table">
+      <thead>
+        <tr id="titulo">
+          <th>Nombre Producto</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+        <tr id="detalle">
+          <td>Apple</td>
+          <td>Red and delicious</td>
+          <td>$1.99</td>
+          <td id="botones"><button class="btn btn-sm btn-info mr-1"><a href="editar-producto.html">Editar</a></button></td>
+          <td id="botones"><button class="btn btn-sm btn-danger">Borrar</button></td>
+        </tr>
+        <tr id="detalle">
+          <td>Banana</td>
+          <td>Yellow and ripe</td>
+          <td>$0.99</td>
+          <td><button class="btn btn-sm btn-info mr-1"><a href="editar-producto.html">Editar</a></button></td>
+          <td><button class="btn btn-sm btn-danger">Borrar</button></td>
+        </tr>
+        <tr id="detalle">
+          <td>Bread</td>
+          <td>Whole wheat bread</td>
+          <td>$2.49</td>
+          <td><button class="btn btn-sm btn-info mr-1"><a href="editar-producto.html">Editar</a></button></td>
+          <td><button class="btn btn-sm btn-danger">Borrar</button></td>
+        </tr>
+        <!-- More rows can be added here -->
+      </tbody>
+    </table>
+    <form id="productForm">
+      <div class="form-group">
+        <label for="productName">Nombre Producto:</label>
+        <input type="text" class="form-control" id="productName" name="productName">
+      </div>
+      <div class="form-group">
+        <label for="productDescription">Descripción Producto:</label>
+        <textarea class="form-control" id="productDescription" name="productDescription"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="productPrice">Precio producto:</label>
+        <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01">
+      </div>
+      <button type="submit" class="btn btn-primary">Alta nuevo Producto</button>
+    </form>
+    
+    <hr>
+    
+
+  </div>
+
+  <footer>
+    <p>&copy;2024 Koldo Arretxea</p>
+    <ul id="redes-sociales">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

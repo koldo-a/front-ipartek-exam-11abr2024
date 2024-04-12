@@ -1,0 +1,31 @@
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+input:invalid + .error,
+textarea:invalid + .error {
+  display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+    tr {
+        display: grid;
+    }
+
+    #titulo {
+        display: none;
+    }
+
+    .input-group .btn-number {
+        width: 1.5rem;
+      }
+      
+      .input-number {
+        text-align: center;
+      }
+      
+}

@@ -1,0 +1,12 @@
+
+
+.loginButton {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100% !important;
+
+    &:hover {
+        color: rgb(235, 235, 235);
+    }
+}
